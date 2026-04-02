@@ -88,7 +88,11 @@ The styling is managed via CSS Variables located in public/style.css.
 
 ## Screenshot
 
+### To-Do List
+
 ![To-Do List](https://github.com/jinaljain0705/NodeJS-Projects/blob/main/To-Do-List/screenshot/to-do-list.png)
+
+### Edit To-Do List
 
 ![Edit To-Do List](https://github.com/jinaljain0705/NodeJS-Projects/blob/main/To-Do-List/screenshot/edit-to-do-list.png)
 
