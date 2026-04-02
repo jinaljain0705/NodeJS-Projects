@@ -27,15 +27,16 @@ A sleek, responsive, and lightweight Todo application built with **Node.js**, **
    ```bash
    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
    cd your-repo-name
-Install dependencies
+   
+### Install dependencies
 
 Bash
+
 ```
 npm install
 ```
-Set up the directory structure
 
-Ensure your project folder looks like this:
+### Set up the directory structure
 
 Plaintext
 
@@ -61,7 +62,7 @@ Open your browser
 Navigate to http://localhost:8020
 ```
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 Frontend: EJS (Embedded JavaScript templates), CSS3 (Custom Variables & Flexbox)
 
@@ -69,12 +70,19 @@ Backend: Node.js, Express.js
 
 Middleware: Built-in Express URL encoding for form handling
 
-🎨 Customization
+## 🎨 Customization
 
-The styling is managed via CSS Variables located in public/style.css. You can easily change the theme by updating the :root values:
+The styling is managed via CSS Variables located in public/style.css.
 
-CSS
+```
 :root {
   --primary-gradient: linear-gradient(135deg, #YOUR_COLOR, #YOUR_COLOR);
   --purple-focus: #YOUR_ACCENT_COLOR;
 }
+```
+
+## Screenshot
+
+![To-Do List]()
+
+
