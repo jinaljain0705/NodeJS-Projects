@@ -30,11 +30,16 @@ A sleek, responsive, and lightweight Todo application built with **Node.js**, **
 Install dependencies
 
 Bash
+```
 npm install
+```
 Set up the directory structure
+
 Ensure your project folder looks like this:
 
 Plaintext
+
+```
 ├── public/
 │   └── style.css
 ├── views/
@@ -42,14 +47,22 @@ Plaintext
 │   └── edit.ejs
 ├── server.js
 └── package.json
+```
+
 Run the application
 
 Bash
+```
 node server.js
+
+```
 Open your browser
+```
 Navigate to http://localhost:8020
+```
 
 🛠️ Tech Stack
+
 Frontend: EJS (Embedded JavaScript templates), CSS3 (Custom Variables & Flexbox)
 
 Backend: Node.js, Express.js
@@ -57,6 +70,7 @@ Backend: Node.js, Express.js
 Middleware: Built-in Express URL encoding for form handling
 
 🎨 Customization
+
 The styling is managed via CSS Variables located in public/style.css. You can easily change the theme by updating the :root values:
 
 CSS
