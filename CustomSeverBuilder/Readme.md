@@ -72,15 +72,15 @@ project-folder/
    ```bash
    npm install -g nodemon
 
-Start the server:
+### Start the server:
 
 nodemon index.js
 
-Open in browser:
+### Open in browser:
 
 http://localhost:8000
 
-🎯 Learning Outcomes
+## 🎯 Learning Outcomes
 
 Core Node.js modules & server creation
 
@@ -92,6 +92,6 @@ Serving HTML, JSON, and plain text
 
 Error handling & status codes
 
-👨‍💻 Author
+## 👨‍💻 Author
 
 Jinal Jain (NodeJS Developer)
