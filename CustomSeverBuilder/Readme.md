@@ -26,16 +26,16 @@ This project demonstrates routing, different response types, query handling, and
 
 ## 📂 Project Structure
 
-
+```
 project-folder/
 │
-├── index.js # Server code
-├── index.html # Home page
-├── about.html # About page
-├── contact.html # Contact page
-├── 404.html # Error page
-└── README.md # Project documentation
-
+├── index.js 
+├── index.html 
+├── about.html
+├── contact.html 
+├── 404.html
+└── README.md 
+```
 
 ---
 
