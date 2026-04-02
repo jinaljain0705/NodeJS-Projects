@@ -1,129 +1,93 @@
-## Custom Server Builder
+# 🚀 Custom Server Builder
 
-### 📌 Project Overview
+A lightweight HTTP server built using **core Node.js modules**—no frameworks required.  
+This project demonstrates routing, different response types, query handling, and proper status codes.
 
-Custom Server Builder is a Node.js project that demonstrates how to create a custom HTTP server using the built-in http module without any frameworks like Express.js.
-The server handles multiple routes, sends different response types, manages query parameters, and returns proper status codes. Tailwind CSS is used to create modern, responsive HTML pages.
+---
 
-## 💡 Features
+## 💡 Project Goals
 
-✅ Create a Node.js HTTP server without Express.
+- Create an HTTP server using Node.js `http` module
+- Serve HTML, JSON, and plain text responses
+- Handle query parameters dynamically
+- Return proper status codes: 200, 404, 500
 
-✅ Handle multiple routes:
+---
 
-```
-/ → Home
-/about → About
-/contact → Contact
-/json → JSON Response
-/user?name=YourName → User page with query parameters
-```
+## 🛠️ Technologies
 
-✅ Return different response types:
+- **Node.js** (core)
+- **http module** – Server creation
+- **fs module** – Read and serve HTML files
+- **querystring module** – Parse query parameters
+- **nodemon** – Auto server reload during development
 
-```
-HTML pages
-JSON response
-```
-
-✅ Proper HTTP status codes:
-
-```
-200 → Success
-404 → Not Found
-```
-
-✅ Responsive Tailwind CSS pages.
-
-✅ Auto-selects a free port if default port is busy.
-
-## 🛠️ Installation & Setup
-
-Clone the repository:
-
-```
-git clone https://github.com/your-username/custom-server-builder.git
-cd custom-server-builder
-```
-
-Install Node.js (if not already installed):
-
-Download Node.js
-
-Run the server:
-
-```
-node server.js
-```
-
-Access the server in your browser:
-
-```
-http://localhost:3002
-```
-
-If port 3000 is busy, it will automatically pick a free port and show it in the console.
-
-## 🧩 Routes & Output
-
-### Route	Response Type	Description
-
-| Route                 | Response Type | Description                         |
-| --------------------- | ------------- | ----------------------------------- |
-| `/`                   | HTML          | Home page with welcome message      |
-| `/about`              | HTML          | About page with project description |
-| `/contact`            | HTML          | Contact page with email & phone     |
-| `/json`               | JSON          | Returns a JSON response             |
-| `/user?name=YourName` | HTML          | Shows user-specific greeting        |
-| Any other route       | HTML          | 404 Page Not Found                  |
-
-
-## 🎨 Tailwind Styling
-
-Modern responsive design
-
-Centered content on all pages
-
-Color-coded pages for better distinction
-
-Navbar with hover effects for navigation
-
-## ⚡ Usage Example
-
-Access user page with query parameters:
-
-```
-http://localhost:3000/user?name=Rahul
-```
-
-JSON page:
-
-```
-http://localhost:3000/json
-```
-
-404 page example:
-
-```
-http://localhost:3000/unknown
-```
+---
 
 ## 📂 Project Structure
 
-```
-CustomServerBuilder/
+
+project-folder/
 │
-├─ server.js          # Main server file
-├─ README.md          # Project documentation
-└─ package.json       # Node project file (optional)
-```
+├── index.js # Server code
+├── index.html # Home page
+├── about.html # About page
+├── contact.html # Contact page
+├── 404.html # Error page
+└── README.md # Project documentation
 
-## 📌 Notes
 
-No external Node packages are required — only Node.js built-in modules (http & url).
+---
 
-The server automatically resolves port conflicts.
+## 🔗 Routes
 
-## 👨‍💻 Author
+| Route              | Response Type           | Description                       |
+|-------------------|-----------------------|-----------------------------------|
+| `/`               | HTML                  | Home page                          |
+| `/about`          | HTML                  | About page                         |
+| `/contact`        | HTML                  | Contact page                       |
+| `/api`            | JSON                  | Returns JSON data                  |
+| `/text`           | Plain Text            | Simple text response               |
+| `/user?name=XYZ`  | Plain Text            | Personalized message using query  |
 
-Jinal Jain – NodeJS Developer
+---
+
+## ⚡ Features
+
+✅ **HTML Response:** Serves `.html` files using `fs.readFile`  
+✅ **JSON Response:** Sends JSON at `/api`  
+✅ **Plain Text Response:** Serves plain text at `/text`  
+✅ **Query Parameters:** Dynamic responses with `/user?name=XYZ`  
+✅ **Status Codes:**  
+- `200` – Success  
+- `404` – Page not found  
+- `500` – Server error  
+
+---
+
+## ▶️ Run Project
+
+1. **Install Node.js**  
+2. **Install nodemon (optional but recommended):**  
+   ```bash
+   npm install -g nodemon
+
+Start the server:
+
+nodemon index.js
+
+Open in browser:
+
+http://localhost:8000
+
+🎯 Learning Outcomes
+
+Core Node.js modules & server creation
+Routing without frameworks
+Handling HTTP requests & query parameters
+Serving HTML, JSON, and plain text
+Error handling & status codes
+
+👨‍💻 Author
+
+Jinal Jain (NodeJS Developer)
