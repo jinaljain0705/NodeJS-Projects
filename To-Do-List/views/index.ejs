@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>My Todo List</h1>
+
+        <form action="/add" method="POST" class="task-form">
+            <input type="text" name="title" placeholder="Task Title" required>
+            <textarea name="description" placeholder="Task Description" required></textarea>
+            <button type="submit" class="btn btn-primary">Add Task</button>
+        </form>
+
+        <ul class="task-list">
+            <% if(tasks.length===0) { %>
+                <li style="text-align: center; color: var(--text-muted);">No tasks yet. Add something new!</li>
+                <% } %>
+                    <% tasks.forEach(task=> { %>
+                        <li class="task-item">
+                            <div class="task-content">
+                                <h2>
+                                    <%= task.title %>
+                                </h2>
+                                <p>
+                                    <%= task.description %>
+                                </p>
+                            </div>
+                            <div class="task-actions">
+                                <a href="/edit/<%= task.id %>" class="btn btn-edit">Edit</a>
+                                <form action="/delete/<%= task.id %>" method="POST"
+                                    onsubmit="return confirm('Are you sure?');">
+                                    <button type="submit" class="btn btn-delete" style="width: 100%;">Delete</button>
+                                </form>
+                            </div>
+                        </li>
+                        <% }) %>
+        </ul>
+    </div>
+</body>
+
+</html>
