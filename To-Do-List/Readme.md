@@ -2,10 +2,6 @@
 
 A sleek, responsive, and lightweight Todo application built with **Node.js**, **Express**, and **EJS**. This project features a custom-crafted UI using **pure CSS3**, moving away from heavy frameworks for a faster, more maintainable experience.
 
-![UI Preview](https://img.shields.io/badge/UI-Modern_CSS3-purple)
-![Backend](https://img.shields.io/badge/Backend-Node.js-green)
-![Status](https://img.shields.io/badge/Status-Complete-blue)
-
 ## ✨ Features
 
 - **Full CRUD Functionality**: Create, Read, Update, and Delete tasks seamlessly.
@@ -33,7 +29,13 @@ A sleek, responsive, and lightweight Todo application built with **Node.js**, **
 Bash
 
 ```
-npm install
+npm install node
+```
+
+### Express and nodemon dependencies
+
+```
+npm i express ejs nodemon
 ```
 
 ### Set up the directory structure
@@ -64,11 +66,14 @@ Navigate to http://localhost:8020
 
 ## 🛠️ Tech Stack
 
-Frontend: EJS (Embedded JavaScript templates), CSS3 (Custom Variables & Flexbox)
 
-Backend: Node.js, Express.js
+Backend: Node.js, Express.js (v5.1.0)
 
-Middleware: Built-in Express URL encoding for form handling
+Templating Engine: EJS
+
+Styling: CSS3
+
+Dev Tool: Nodemon
 
 ## 🎨 Customization
 
@@ -84,6 +89,8 @@ The styling is managed via CSS Variables located in public/style.css.
 ## Screenshot
 
 ![To-Do List]()
+
+![Edit To-Do List]()
 
 ## 👨‍💻 Author
 
