@@ -85,4 +85,6 @@ The styling is managed via CSS Variables located in public/style.css.
 
 ![To-Do List]()
 
+## 👨‍💻 Author
 
+Jinal Jain (NodeJS Developer)
