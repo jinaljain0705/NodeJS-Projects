@@ -83,9 +83,13 @@ http://localhost:8000
 🎯 Learning Outcomes
 
 Core Node.js modules & server creation
+
 Routing without frameworks
+
 Handling HTTP requests & query parameters
+
 Serving HTML, JSON, and plain text
+
 Error handling & status codes
 
 👨‍💻 Author
