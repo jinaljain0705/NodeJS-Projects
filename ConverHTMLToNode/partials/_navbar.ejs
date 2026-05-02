@@ -1,0 +1,20 @@
+<h1 class="welcome-text">Good Morning, <span class="text-black fw-bold"><%= userName %></span></h1>
+...
+<img class="img-xs rounded-circle" src="<%= userProfileImg %>" alt="Profile image">
+...
+<p class="mb-1 mt-3 fw-semibold"><%= userName %></p>
+<p class="fw-light text-muted mb-0"><%= userEmail %></p>
+...
+<span class="count"><%= notifications.length %></span>
+<% notifications.forEach(function(note) { %>
+  <a class="dropdown-item preview-item py-3">
+    <div class="preview-thumbnail">
+      <i class="<%= note.icon %> m-auto text-primary"></i>
+    </div>
+    <div class="preview-item-content">
+      <h6 class="preview-subject fw-normal text-dark mb-1"><%= note.title %></h6>
+      <p class="fw-light small-text mb-0"><%= note.time %></p>
+    </div>
+  </a>
+<% }); %>
+

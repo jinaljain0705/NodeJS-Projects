@@ -1,0 +1,33 @@
+<nav class="sidebar sidebar-offcanvas" id="sidebar">
+  <ul class="nav">
+    <% if (sidebarMenu && sidebarMenu.length) { %>
+      <% sidebarMenu.forEach(function(item) { %>
+        <% if (item.type === 'category') { %>
+          <li class="nav-item nav-category"><%= item.title %></li>
+        <% } else if (item.type === 'link') { %>
+          <li class="nav-item">
+            <a class="nav-link" href="<%= item.href %>">
+              <i class="<%= item.icon %> menu-icon"></i>
+              <span class="menu-title"><%= item.title %></span>
+            </a>
+          </li>
+        <% } else if (item.type === 'collapse') { %>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#<%= item.id %>" aria-expanded="false" aria-controls="<%= item.id %>">
+              <i class="<%= item.icon %> menu-icon"></i>
+              <span class="menu-title"><%= item.title %></span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="<%= item.id %>">
+              <ul class="nav flex-column sub-menu">
+                <% item.children.forEach(function(sub) { %>
+                  <li class="nav-item"> <a class="nav-link" href="<%= sub.href %>"><%= sub.title %></a></li>
+                <% }); %>
+              </ul>
+            </div>
+          </li>
+        <% } %>
+      <% }); %>
+    <% } %>
+  </ul>
+</nav>
